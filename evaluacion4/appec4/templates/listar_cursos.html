@@ -1,0 +1,24 @@
+<h1>LISTA DE CURSOS</h1>
+{% for curso in cursos %}
+<table>
+<tr>
+        <td>CODIGO: {{curso.code}}</td>
+</tr>
+<tr>
+        <td>NOMBRE: {{curso.name}}</td>
+</tr>
+<tr>
+        <td>HORAS: {{curso.hour}}</td>
+</tr>
+<tr>
+        <td>CREDITOS: {{curso.credits}}</td>
+</tr>
+<tr>
+        <td>ESTADO: {{curso.state}}</td>
+</tr>
+</table>
+<a href="">Eliminar</a><br>
+<br>
+<br>
+
+{% endfor %}

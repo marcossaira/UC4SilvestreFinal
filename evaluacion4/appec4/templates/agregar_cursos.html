@@ -1,0 +1,29 @@
+{% if messages %}
+        {% for message in messages %}
+            <div class="message">
+                {{message}}
+            </div>
+        {% endfor %}
+    {% endif %}
+
+
+<h1 class="title">AGREGAR CURSO</h1> 
+<form action="{% url 'agregar_cursos' %}" method="POST">
+    {% csrf_token %}
+    <label for="codigo">CODIGO: </label>
+    <input type="text" name="codigo" />
+
+    <label for="nombre">NOMBRE: </label>
+    <input type ='text' name="nombre" />
+
+    <label for="horas">HORAS: </label>
+    <input type ='text' name="horas" />
+
+    <label for="creditos">CREDITOS: </label>
+    <input type ='text' name="creditos" />
+
+    <label for="estado">ESTADO: </label>
+    <input type ='text' name="estado" />
+
+    <input type="submit" value="Agregar" />
+</form>
