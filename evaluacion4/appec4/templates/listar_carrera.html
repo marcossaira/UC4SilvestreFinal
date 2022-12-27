@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1>LISTA DE CARRERAS</h1>
+{% for carrera in carreras %}
+
+<table>
+
+<tr>
+        <td>NOMBRE: {{carrera.name}}</td>
+</tr>
+<tr>
+        <td>SIGLAS: {{carrera.shortname}}</td>
+</tr>
+<tr>
+        <td>DESCRIPCION: {{carrera.description}}</td>
+</tr>
+<tr>
+</tr>
+<tr>
+        <td>ESTADO: {{carrera.state}}</td>
+</tr>
+<tr>
+    <td><img src="http://www.untels.edu.pe/images/{{carrera.imagen}}" width="100"></td>
+</tr>
+<tr>
+    <td><button class='bt1'><a href="{% url 'eliminar_carrera' id=carrera.id %}">Eliminar</a></button></td>
+</tr>
+</table>
+
+<br>
+<br>
+{% endfor %}
+
+{% endblock %}

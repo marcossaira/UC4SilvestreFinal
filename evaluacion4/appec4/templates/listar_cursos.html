@@ -1,3 +1,6 @@
+{% extends 'layout.html' %}
+
+{% block content%}
 <h1>LISTA DE CURSOS</h1>
 {% for curso in cursos %}
 <table>
@@ -16,9 +19,13 @@
 <tr>
         <td>ESTADO: {{curso.state}}</td>
 </tr>
+
+<tr>
+        <td><button class='bt1'><a href="{% url 'eliminar_curso' id=curso.id %}">Eliminar</a></button></td>
+    </tr>
 </table>
-<a href="">Eliminar</a><br>
 <br>
 <br>
 
 {% endfor %}
+{% endblock %}

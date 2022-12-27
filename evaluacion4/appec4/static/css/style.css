@@ -1,4 +1,36 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: darkkhaki;
+    background-image: linear-gradient(to right, #FFFFFF, rgb(34, 202, 202));}
+
+h1{
+    text-align: center;
+    color:blue
+}
+
+.e {
+    margin-left: 800px;
+    font-size: x-large;
+}
+
+a{
+    text-decoration: none;
+    color:royalblue
+}
+
+table, tr, td{
+    margin-left: 800px;
+    font-size: large;
+    color:royalblue
+}
+ 
+img{
+    margin-left: 130px;
+
+}
+
+.bt1{
+    margin-left:150px;
+    color:aliceblue;
+    background-color: rgb(243, 221, 214);
+    margin-bottom: 1.5px;
 }

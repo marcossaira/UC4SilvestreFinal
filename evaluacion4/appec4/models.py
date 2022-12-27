@@ -9,3 +9,9 @@ class Course (models.Model):
     credits=models.CharField(max_length=30)
     state=models.CharField(max_length=15)
 
+class Career (models.Model):
+    name=models.CharField(max_length=50)
+    shortname=models.CharField(max_length=30)
+    description=models.TextField()
+    imagen=models.TextField()
+    state=models.CharField(max_length=15)

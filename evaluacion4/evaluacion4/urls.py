@@ -20,9 +20,14 @@ from appec4 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.inicio,name='inicio'),
-    path('listar_carreras/', views.carreras, name='listar_carreras'),
+    path('listar_carreras/', views.listar_carreras, name='listar_carreras'),
     path('agregar_carreras/', views.crear_carrera, name='agregar_carreras'),
-    path('ruta_cursos/', views.ruta_curso, name='ruta_cursos'),
+    path('ruta_cursos/', views.ruta_cursos, name='ruta_cursos'),
+    path('ruta_carreras/', views.ruta_carreras, name='ruta_carreras'),
     path('listar_cursos/', views.listar_cursos, name='listar_cursos'),
-    path('agregar_cursos/', views.crear_curso, name='agregar_cursos')
+    path('agregar_cursos/', views.crear_curso, name='agregar_cursos'),
+
+    path('eliminar_curso/<int:id>', views.eliminar_curso, name='eliminar_curso'),
+    path('eliminar_carrera/<int:id>', views.eliminar_carrera, name='eliminar_carrera'),
+  
 ]
